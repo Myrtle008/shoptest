@@ -8,6 +8,7 @@ class UserAddressController extends Controller
 {
     public function index(Request $request)
     {
+    	// return $request->user()->address;
     	return view('user_addresses.index',[
     		'addresses'=>$request->user()->address,
     	]);

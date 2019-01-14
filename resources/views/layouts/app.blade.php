@@ -8,7 +8,6 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>@yield('title', 'Laravel Shop') - Laravel 电商教程</title>
     <!-- 样式 -->
-    <link href="css/main.css" rel="stylesheet">
     <link href="css/app.css" rel="stylesheet">
 </head>
 <body>
