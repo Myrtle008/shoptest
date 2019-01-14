@@ -11,8 +11,6 @@
 |
  */
 
-Route::get('/', 'PagesController@root')->name('root');
+Route::get('/', 'PagesController@root')->name('root'); //->middleware('verified') 验证邮箱中间件
 
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
+Auth::routes(['verify' => true]);
